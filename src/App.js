@@ -59,8 +59,8 @@ useEffect(() => {getlegosets()}, [])
 
        />
         <Route 
-         path='/post/;id'
-         render={(rp) => <SinglePost {...rp}/>}
+         path='/post/:id'
+         render={(rp) => <SinglePost posts= {posts} {...rp}/>}
 
        />
         <Route 
