@@ -1,6 +1,5 @@
+
 import React, {useState} from "react"
-
-
 
 const Form = ({initialPost, history, handleSubmit, buttonLabel}) => {
     //The Form State
