@@ -71,18 +71,18 @@ const getTargetLegoSet = (legoset) => {
   setTargetLegoSet(legoset)
   props.history.push("/edit")
 }
-
-const updateLegopSet = async (legoset) => {
+//Function to edit legoset on form submission
+const updateLegoSet = async (legoset) => {
   const response = await fetch(url + legoset.id + 
     "/", {
     method: "put",
     headers: {
       "Content-Type": "application/json"
     },
-    body: JSON.stringify(legoset)
-  })
-   getlegosets()
-}
+    body: JSON.stringify(legoset),
+  });
+   getlegosets();
+};
 
 ////////////////////////////////
 ////useEffect////////////////
@@ -106,12 +106,16 @@ useEffect(() => {getlegosets()}, [])
        />
         <Route 
          path='/post/:id'
-         render={(rp) => <SinglePost posts= {posts} {...rp}/>}
+         render={(rp) => <SinglePost 
+          posts= {posts} 
+          edit={getTargetLegoSet}
+          {...rp}/>}
 
        />
         <Route 
          path='/new'
-         render={(rp) => <Form initialPost={nullLegoSet}
+         render={(rp) => <Form 
+          initialPost={nullLegoSet}
          handleSubmit={addLegoSets}
          buttonLabel="Create New Project"
           {...rp}/>}
@@ -119,8 +123,15 @@ useEffect(() => {getlegosets()}, [])
         
          <Route 
          path='/edit'
-         render={(rp) => <Form {...rp}/>}
+         render={(rp) => ( 
+         <Form 
+         {...rp}
+         initialPost={targetLegoSet}
+         handleSubmit={updateLegoSet}
+         buttonLabel="Update Project"
        />
+         )}
+         />
      </Switch>
     </div>
   );
