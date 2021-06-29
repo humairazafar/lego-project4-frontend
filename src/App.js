@@ -83,7 +83,16 @@ const updateLegoSet = async (legoset) => {
   });
    getlegosets();
 };
-
+//Function to Delete a legoset  
+const deleteLegoSet = async (legoset) => {
+    const response = await fetch(url + legoset.id + 
+      "/", { 
+      method: "delete",
+      })
+      //get updated list of legosets
+      getlegosets()
+      props.history.push("/");
+  };
 ////////////////////////////////
 ////useEffect////////////////
 ///////////////////////////
@@ -109,9 +118,11 @@ useEffect(() => {getlegosets()}, [])
          render={(rp) => <SinglePost 
           posts= {posts} 
           edit={getTargetLegoSet}
+          deleteLegoSet={deleteLegoSet}
           {...rp}/>}
 
        />
+       
         <Route 
          path='/new'
          render={(rp) => <Form 
