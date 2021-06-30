@@ -98,6 +98,7 @@ useEffect(() => {getlegosets()}, [])
 /////////////////////////////////
   return (
     <div className="App">
+      <h1>LEGOlicious</h1>
      <h1>My LEGO Projects</h1>
      <Link to="/new"><button class="u-full-width button-primary">Create New LEGO Project</button></Link>
      <Switch>

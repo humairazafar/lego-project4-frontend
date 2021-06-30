@@ -21,3 +21,9 @@ ___________________________________________________________
 ## Notes
 Project URL
 [LEGOlicious](https://silly-hugle-bf2965.netlify.app/)
+
+<img width="722" alt="Screen Shot 2021-06-29 at 8 49 58 PM" src="https://user-images.githubusercontent.com/75461281/123889673-9f023b00-d91b-11eb-8a81-78ea5f297f2c.png">
+
+<img width="1255" alt="Screen Shot 2021-06-29 at 8 51 08 PM" src="https://user-images.githubusercontent.com/75461281/123889770-c822cb80-d91b-11eb-97b2-ea08e0eb4bb1.png">
+
+<img width="1359" alt="Screen Shot 2021-06-29 at 8 46 36 PM" src="https://user-images.githubusercontent.com/75461281/123889434-2307f300-d91b-11eb-9778-6912e4998ea5.png">
