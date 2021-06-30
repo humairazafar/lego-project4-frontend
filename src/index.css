@@ -1,5 +1,23 @@
+
+h1 {
+  text-align: center;
+  color: rgb(86, 8, 116);
+}
+
+button {
+  class:button-primary;
+
+}
+
+form {
+
+}
+
 body {
-  margin: 0;
+  background-color: rgb(247, 243, 243);
+  border-top: ipx solid black;
+  
+  margin: 10px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;

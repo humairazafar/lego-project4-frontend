@@ -13,17 +13,12 @@ function App(props) {
   ///////////////////////
 
   const h1 = {
-    textAlign: "center",
-    margin: "10px"
+    //textAlign: "center",
+    //margin: "10px"
 
   }
 
-  const button = {
-    backgroundColor: "navy",
-    display: "block",
-    margin: "auto"
-
-  }
+  
 
   ////////////////////////
   //State and other Variable
@@ -103,8 +98,8 @@ useEffect(() => {getlegosets()}, [])
 /////////////////////////////////
   return (
     <div className="App">
-     <h1 style={h1}>My LEGO Projects</h1>
-     <Link to="/new"><button style={button}>Create New LEGO Project</button></Link>
+     <h1>My LEGO Projects</h1>
+     <Link to="/new"><button class="u-full-width button-primary">Create New LEGO Project</button></Link>
      <Switch>
        <Route 
          exact 

@@ -21,12 +21,17 @@ const SinglePost = ({posts, match, edit, deleteLegoSet}) => {
     return (
     <div style={div}>
         <h1>{post.name}</h1>
-        <h2>{post.details}</h2>
+        <p>{post.details}</p>
         <img src={post.img_url}  style={{width: '50%', height: '50%'}} alt="LEGO Pictures"/>
-        <button onClick={(event) => edit(post)}>Edit</button>
-        <button onClick={(event) => deleteLegoSet(post)}>Delete</button>
+        <br/>
+        <button class="button-primary" onClick={(event) => edit(post)}>Edit</button>
+        <br>
+        </br>
+        <button class="button-primary" onClick={(event) => deleteLegoSet(post)}>Delete</button>
+        <br>
+        </br>
         <Link to="/">
-        <button>Go to Main</button>
+        <button class="button button-primary">Go to Main</button>
         </Link>
     </div>
     );

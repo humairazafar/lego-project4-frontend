@@ -23,26 +23,38 @@ const Form = ({initialPost, history, handleSubmit, buttonLabel}) => {
         handleSubmit(formData)
         history.push("/")
     }
-    return <form onSubmit={handleSubmission}>
+    return <form class= "form" onSubmit={handleSubmission}>
+        <br/>
+        <br/>
         <input
          type="text"
          onChange={handleChange}
          value={formData.name}
          name="name"
+         placeholder="Project Name"
          />
+         <br/>
+         <br/>
          <input
           type="text"
           onChange={handleChange}
           value={formData.details}
           name="details"
+          placeholder="Project Details"
+          class="button-primary"
           />
+          <br/>
+          <br/>
           <input 
           type="text"
           onChange={handleChange}
           value={formData.img_url}
           name="img_url"
+          placeholder="Your Image"
           />
-          <input type="submit" value={buttonLabel}/>
+          <br/>
+          <br/>
+          <input type="submit" class="button-primary" value={buttonLabel}/>
     </form>;
 }
 
