@@ -20,4 +20,4 @@ ___________________________________________________________
 
 ## Notes
 Project URL
-[LEGOlicious] https://silly-hugle-bf2965.netlify.app/
+[LEGOlicious](https://silly-hugle-bf2965.netlify.app/)
